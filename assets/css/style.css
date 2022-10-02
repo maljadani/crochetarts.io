@@ -1,3 +1,19 @@
+ /*
+/* CSS HEX */
+/*--van-dyke-brown: #5d3e29ff;
+--black-chocolate: #231710ff;
+--cinereous: #978580ff;
+--grullo: #a2948dff;
+--pale-silver: #d3cac8ff;
+
+/* SCSS RGB */
+/*$van-dyke-brown: rgba(93, 62, 41, 1);
+$black-chocolate: rgba(35, 23, 16, 1);
+$cinereous: rgba(151, 133, 128, 1);
+$grullo: rgba(162, 148, 141, 1);
+$pale-silver: rgba(211, 202, 200, 1);
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -302,3 +318,116 @@ h3{
 
   
   /* Credit to https://epicbootstrap.com/snippets/footer-basic */
+
+  /* BEGIN CARD DESIGN */
+.hero {
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    min-width: 400px;
+    height: 400px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    margin: 30px;
+  }
+  
+  .hero-profile-img {
+    height: 70%;
+  }
+  
+  .hero-description-bk {
+    border-radius: 50px;
+    position: absolute;
+    top: 55%;
+    left: -5px;
+    height: 65%;
+    width: 108%;
+    transform: skew(19deg, -9deg);
+  }
+  
+  .first .hero-description-bk {
+    background-image: linear-gradient(0deg, #5d3e29, #978580);
+    }
+
+  .second .hero-description-bk {
+    background-image: linear-gradient(-20deg, #5d3e29, #978580);
+  }
+
+  .third .hero-description-bk {
+    background-image: linear-gradient(-20deg, #5d3e29, #978580);
+  }
+  
+  .hero-logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 30%;
+    left: 30px;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-logo img {
+    height: 100%;
+  }
+  
+  .hero-description {
+    position: absolute;
+    color: #fff;
+    font-weight: 900;
+    left: 150px;
+    bottom: 26%;
+  }
+  
+  .card-btn {
+    position: absolute;
+    color: #fff;
+    right: 30px;
+    bottom: 10%;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    
+    
+  }
+  
+  .card-btn a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .card-btn:hover{
+    border: 1px solid #a2948d;
+    background: #a2948d;
+    transition: 1s;
+    
+}
+  
+  .hero-date {
+    position: absolute;
+    color: #fff;
+    left: 30px;
+    bottom: 10%;
+  }
+  /* END CARD DESIGN */
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    background-color: #eee;
+    min-height: 100vh;
+  }
+  .btn i:before {
+    width: 14px;
+    height: 14px;
+    position: fixed;
+    color: #fff;
+    background: #0077b5;
+    padding: 10px;
+    border-radius: 50%;
+    top: 5px;
+    right: 5px;
+  }
+  
