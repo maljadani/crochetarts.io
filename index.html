@@ -1,363 +1,224 @@
 <!DOCTYPE html>
-<html lang="en">
-<!-- <html dir="rtl"> -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>متجر نسيج | Naseej</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0e6ea06a08.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<!-- header -->
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html"><img src="assets/_images/_un-optimized/logo.png" width="200px"></a>
-                </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="account.html">الحساب</a></li>
-                        <li><a href="">أتصل بنا</a></li>
-                        <li><a href="">نبذة عنا</a></li>
-                        <li><a href="products.html">المنتجات</a></li>
-                        <li><a href="index.html">الرئيسية</a></li>
-                    </ul>
-                </nav>
-                <a href="cart.html"><img src="assets/_images/_un-optimized/cart.png" width="30px" height="30px"></a>
-                <img src="assets/_images/_un-optimized/menu.png" class="menu-icon" onclick="menutoggle()">
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1>نسيج تقدم فنون الكروشيه<br>بمفهوم جديد</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>  ratione voluptatum ipsum tempora corporis </p>
-                    <a href="" class="btn">أكتشف المزيد &#8594;</a>
-                </div>
-                <div class="col-2">
-                    <img src="assets/_images/_un-optimized/image1.png">
-                </div>
-            </div>
-        </div>
-    </div>
-
-<!-- featured categories -->
-    <div class="categorise">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="assets/_images/_un-optimized/category-1.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="assets/_images/_un-optimized/category-2.jpg">
-                </div>
-                <div class="col-3">
-                    <img src="assets/_images/_un-optimized/category-3.jpg">
-                </div>
-            </div>
-        </div>
-    </div>
+<html dir="rtl">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"/>
     
-<!-- featured products -->
-    <div class="small-container">
-        <h2 class="title">المنتجات المتميزة</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-1.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-2.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-3.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-4.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-        </div>
-        <h2 class="title">المضافة حديثاً</h2>
-        <div class="row">
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-5.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-6.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-7.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-8.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-9.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-10.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-11.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-            <div class="col-4">
-                <img src="assets/_images/_un-optimized/product-12.jpg">
-                <h4>Red Printed T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>$50.00</p>
-            </div>
-        </div>
-    </div>
-<!-- offer -->
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="assets/_images/_un-optimized/exclusive.png" class="offer-img">
-                </div>
-                <div class="col-2">
-                    <p>حصرياً على متجر نسيج</p>
-                    <h1>بكج خيوط وصنارة</h1>
-                    <small>هذا البكج حصرياً على متجر نسيج حيث يحتوي على لونين من الخيوط بإختيارك مع صنارة باللون الأخضر</small>
-                    <a href="" class="btn">أشتر الآن &#8594;</a>
-                </div>
-            </div>
-        </div>
-    </div>
-<!-- testimonial -->
-    <div class="testimonial">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <i class="fa-solid fa-quote-left"></i>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sint architecto aspernatur? Error perferendis repudiandae voluptas asperiores veritatis eveniet accusantium expedita ducimus, nihil, sed sequi adipisci labore! Molestiae, facilis id?</p>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <img src="/assets/_images/_un-optimized/user-1.png">
-                    <h3>Marwan Aljadani</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa-solid fa-quote-left"></i>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sint architecto aspernatur? Error perferendis repudiandae voluptas asperiores veritatis eveniet accusantium expedita ducimus, nihil, sed sequi adipisci labore! Molestiae, facilis id?</p>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <img src="/assets/_images/_un-optimized/user-2.png">
-                    <h3>Marwan Aljadani</h3>
-                </div>
-                <div class="col-3">
-                    <i class="fa-solid fa-quote-left"></i>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima sint architecto aspernatur? Error perferendis repudiandae voluptas asperiores veritatis eveniet accusantium expedita ducimus, nihil, sed sequi adipisci labore! Molestiae, facilis id?</p>
-                    <div class="rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <img src="/assets/_images/_un-optimized/user-3.png">
-                    <h3>Marwan Aljadani</h3>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!--Footer things-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" href="assets/css/ionicons.min.css" /> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
 
-<!-- brands -->
-    <div class="brands">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <img src="/assets/_images/_un-optimized/logo-godrej.png">
-                </div>
-                <div class="col-5">
-                    <img src="/assets/_images/_un-optimized/logo-oppo.png">
-                </div>
-                <div class="col-5">
-                    <img src="/assets/_images/_un-optimized/logo-coca-cola.png">
-                </div>
-                <div class="col-5">
-                    <img src="/assets/_images/_un-optimized/logo-paypal.png">
-                </div>
-                <div class="col-5">
-                    <img src="/assets/_images/_un-optimized/logo-philips.png">
-                </div>
-            </div>
-        </div>
-    </div>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 
-<!-- Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>حمل تطبيقنا الآن</h3>
-                    <p>يمكنك تحميل التطبيق من App Store و Play Store</p>
-                    <div class="app-logo">
-                        <img src="/assets/_images/_un-optimized/play-store.png">
-                        <img src="/assets/_images/_un-optimized/app-store.png">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="/assets/_images/_un-optimized/logo-white.png">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo in explicabo quo minima.</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>روابط مفيدة</h3>
-                    <ul>
-                        <li>الكوبونات</li>
-                        <li>المدونة</li>
-                        <li>سياسة الشحن</li>
-                        <li>سياسة الإسترجاع</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>تابعنا على</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Instagram</li>
-                        <li>YouTube</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-            <p class="copyright">الحقوق محفوظة 2022 - Naseej Store</p>
-        </div>
-    </div>
+    <title>نسيج</title>
+  </head>
 
-<!-- js for toggle menu -->
-    <script>
-        var MenuItems = document.getElementById("MenuItems");
-        MenuItems.style.maxHeight = "0px";
-        function menutoggle(){
-            if(MenuItems.style.maxHeight == "0px")
-                {
-                    MenuItems.style.maxHeight = "200px";
-                }
-            else
-                {
-                    MenuItems.style.maxHeight = "0px";
-                }
-        }
-    </script>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="/assets/img/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#main">الرئيسية</a></li>
+            <li><a href="#about">عن الكروشيه</a></li>
+            <li><a href="#tools">الأدوات</a></li>
+            <li><a href="#courses">الدورات التعليمية</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>موقع يهتم بكل مايخص فن الكروشيه</h1>
+        <p>
+          كل ما تريد معرفته عن فن الكروشيه من تاريخ هذا الفن إلى الأدوات
+          والمهارات الأساسية مع كورس تعليمي مجاني يشرح الأدوات والمهارات
+          الأساسية
+        </p>
+        <a href="" class="hero-btn">تابعنا لتتعرف على المزيد</a>
+      </div>
+    </section>
+
+    <!--about SECTION-->
+    <section class="about">
+      <h1>عن الكروشيه</h1>
+      <p>
+        الكروشيه هو الحياكة أو لف الخيط بالإبر الصغيرة، وهي عبارة عن إبرة خاصة
+        لها شكل معقوف نسميها عادة بالسنارة. والنسيج المحبوك بالتعقيف يسمى
+        المُعَقَّف. والخيوط المستخدمة متعددة، وتتنوع الخامات المستخدمة من القطن،
+        إلى الصوف والحرير وغيرها. هذا بالطبع بخلاف الخامات الصناعية. تستخدم هذه
+        التقنية في صناعة المفارش والأغطية والملابس والمكملات المنزلية التي لا
+        حصر لها.
+      </p>
+      <div class="row">
+        <div class="about-col">
+          <h3>التاريخ</h3>
+          <p>
+            اشتُقت كلمة كروشيه من الكلمة الفرنسية croc أوcroche - التي استُخدمت في الفترة التاريخية الانتقالية من 1340-1611 التي أصبحت فيها اللغة الفرنسية هي اللغة الرسمية للمملكة الفرنسية بدلاً من اللغة اللاتينية - والتي تعني صنَّارة أو خُطاف أو كُلاَّب.
+          </p>
+        </div>
+        <div class="about-col">
+          <h3>منشأ التعقيف</h3>
+          <p>
+            يفترض البعض أن التعقيف قد نشأ عن ممارساتٍ تقليدية تمت مزاولتها في شبه الجزيرة العربية، أو جنوب أفريقيا، أو الصين، إلا أنه ليس هناك دليلاً دامغًا يؤكد أن هذه الحرفة تمت مزاولتها قبل اكتسابها لشعبيتها في أوروبا أثناء القرن التاسع عشر.
+          </p>
+        </div>
+        <div class="about-col">
+          <h3>التطبيق الحديث</h3>
+          <p>
+            لقد تغيرت موضات الكروشيه بنهاية العصر الفيكتوري في التسعينات من القرن التاسع عشر. حيث أصبحت أعمال دانتيل الكروشيه في عصر الملك إدوارد، الذي بلغ ذروته في الفترة ما بين عامي 1910 و1920، أكثر إتقانًا من حيث النسيج وأكثر تعقيدًا من حيث التطريز.
+          </p>
+        </div>
+        
+        <div class="about-col">
+          <h3>طريقة التنفيذ</h3>
+          <p>
+            يبدأ نسيج الكروشيه بعمل حلقة بعقدة منزلقة حول صنارة الإبرة، ثم سحب حلقة أخرى من خلال الحلقة الأولى، ثم تكرار هذه العملية لتنفيذ سلسلة من الغرز بطول مناسب. وإمَّا أن تُقلب السلسلة وتُنفذ في شكل صفوف، وإمَّا أن يتم وصلها ببداية الصف بغرزة منزلقة وتُنفذ في شكل دوائر.
+          </p>
+        </div>
+        <div class="about-col">
+          <h3>الرموز والمصطلحات</h3>
+          <p>
+            تحظى غرز التعقيف الأساسية بأسماء مختلفة داخل العالم المتعامل مع مجال الكروشيه باللغة بالإنجليزية. وعادةً ما يُشار إلى الاختلافات برمزين: الرمز Us ليُشير إلى المصطلح المستخدم في الولايات المتحدة، والرمز UK ليُشير إلى المصطلح المستخدم في المملكة المتحدة.
+          </p>
+        </div>
+        <div class="about-col">
+          <h3>الكروشيه والتريكو</h3>
+          <p>
+            إن إحدى الفروق الأكثر وضوحًا بين الكروشيه والتريكو هي أن الكروشيه يستخدم إبرة واحدة بينما تستخدم معظم أشغال التريكو إبرتين. وذلك لأن في الكروشيه يكون لدى الحرفي غرزة واحدة فقط نشطة على الإبرة، بينما شاغل التريكو يحتفظ بصف كامل من الغرز نشط في نفس الوقت.
+          </p>
+        </div>
+      </div>
+      
+      
+      
+</div>
+    </section>
+
+    <section>
+      <div class="first hero">
+        <img class="hero-profile-img" src="assets/img/ch01.jpg" alt="">
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+          <img src="/favicon.ico" alt="">
+        </div>
+        <div class="hero-description">
+          <p>
+            اشتُقت كلمة كروشيه من الكلمة الفرنسية croc أوcroche - التي استُخدمت في الفترة التاريخية الانتقالية من 1340-1611 التي أصبحت فيها اللغة الفرنسية هي اللغة الرسمية للمملكة الفرنسية بدلاً من اللغة اللاتينية - والتي تعني صنَّارة أو خُطاف أو كُلاَّب.
+          </p>
+        </div>
+        <div class="hero-date">
+          
+        </div>
+        <div class="card-btn">
+          <a href="#">الإطلاع على المزيد</a>
+        </div>
+      </div>
+      
+      <div class="second hero">
+        <img class="hero-profile-img" src="assets/img/ch02.jpg" alt="">
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+          <img src="/favicon.ico" alt="">
+        </div>
+        <div class="hero-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="hero-date">
+          
+        </div>
+        <div class="card-btn">
+          <a href="#">الإطلاع على المزيد</a>
+        </div>
+      </div>
+
+      <div class="third hero">
+        <img class="hero-profile-img" src="assets/img/ch03.jpg" alt="">
+        <div class="hero-description-bk"></div>
+        <div class="hero-logo">
+          <img src="/favicon.ico" alt="">
+        </div>
+        <div class="hero-description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="hero-date">
+          
+        </div>
+        <div class="card-btn">
+          <a href="#">الإطلاع على المزيد</a>
+        </div>
+      </div>
+    </section>
     
-</body>
+    <!--tools SECTION-->
+    <section class="tools">
+      <h1>أدوات الكروشيه</h1>
+      <p>الكروشيه واحد من أساليب التعقيف التي يتم فعله باستخدام أدوات معينة.</p>
+      <div class="row">
+        <div class="tools-col">
+          <img src="/assets/img/toolsYarn.jpg" />
+          <div class="layer">
+            <h3>الخيوط</h3>
+          </div>
+        </div>
+        <div class="tools-col">
+          <img src="/assets/img/toolsHooks.jpeg" />
+          <div class="layer">
+            <h3>الخطافات</h3>
+          </div>
+        </div>
+        <div class="tools-col">
+          <img src="/assets/img/toolsNeedle.jpeg" />
+          <div class="layer">
+            <h3>الإبر</h3>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!--sign up SECTION-->
+    
+
+    <!--footer SECTION-->
+    <section>
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="#instagram"><i class="icon ion-social-instagram"></i></a> 
+          <a href="#snapchat"><i class="icon ion-social-snapchat"></i></a>
+          <a href="#twitter"><i class="icon ion-social-twitter"></i></a>
+          <a href="#facebook"><i class="icon ion-social-facebook"></i></a>
+          <a href="#tiktok"><i> <ion-icon class="tiktok-icon" name="logo-tiktok"></ion-icon></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#main">الرئيسية</a></li>
+          <li class="list-inline-item"><a href="#services">خدماتنا</a></li>
+          <li class="list-inline-item"><a href="#aboutUs">نبذة عنا</a></li>
+          <li class="list-inline-item"><a href="#contactUs">اتصل بنا</a></li>
+          <li class="list-inline-item"><a href="#privacy">سياسة الخصوصية</a></li>
+        </ul>
+        <p class="copyright">نسيج © 2022</p>
+      </footer>
+    </div>
+  </section>
+    <script src="https://kit.fontawesome.com/5592422ec4.js" crossorigin="anonymous" ></script>
+    <script> var navLinks = document.getElementById("navLinks"); function showMenu() { navLinks.style.right = "0"; } function hideMenu() { navLinks.style.right = "-200px"; } </script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>
